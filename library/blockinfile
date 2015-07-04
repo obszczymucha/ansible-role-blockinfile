@@ -211,8 +211,8 @@ def main():
     elif n0 < n1:
         lines[n0:n1+1] = []
     else:
-        lines[n1:n0+1] = []
-        n0 = n1
+        lines[n1+1:n0+1] = []
+        n0 = n1+1
 
     lines[n0:n0] = contentlines
 
